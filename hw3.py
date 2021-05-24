@@ -227,7 +227,7 @@ def train(model, iterator, optimizer, criterion, clip):
 
 def evaluate(model, iterator, criterion):
     model.eval()
-    eopch_loss = 0
+    epoch_loss = 0
     
     with torch.no_grad():
         for i, batch in enumerate(iterator):
